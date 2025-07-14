@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+﻿import React, { useState } from 'react';
 import './App.css';
 
 const TestnetBaccarat = () => {
@@ -10,7 +10,6 @@ const TestnetBaccarat = () => {
     const [isTestnet, setIsTestnet] = useState(false);
 
     // Game State
-    const [gameRooms, setGameRooms] = useState([]);
     const [currentRoom, setCurrentRoom] = useState(null);
     const [playerCards, setPlayerCards] = useState([]);
     const [bankerCards, setBankerCards] = useState([]);
@@ -206,7 +205,6 @@ const TestnetBaccarat = () => {
             status: 'waiting'
         };
 
-        setGameRooms(prev => [...prev, room]);
         setCurrentRoom(room);
         setGameState('waiting');
         playSound(600, 0.2);
