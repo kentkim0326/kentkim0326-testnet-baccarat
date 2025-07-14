@@ -569,7 +569,13 @@
   );
 };
 
-export default LuxuryCasinoBaccarat; rounded - xl p - 4">
+export default LuxuryCasinoBaccarat;
+
+function App() {
+    return <LuxuryCasinoBaccarat />;
+}
+
+export { App }; rounded - xl p - 4">
     < div className = "text-3xl mb-2" >🏆</div >
                           <div className="text-white font-semibold">Win Rate</div>
                           <div className="text-green-400 text-xl font-bold">
